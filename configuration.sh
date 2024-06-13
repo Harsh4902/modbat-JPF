@@ -4,6 +4,8 @@
 
 [ -e "${SCALA_HOME}" ] || SCALA_HOME="/usr/share/scala/"
 
+[ -e "${SCALA_HOME}" ] || SCALA_HOME="`which scala | sed -e 's,/bin/scala,,'`"
+
 [ -e "${JPF_HOME}" ] || JPF_HOME="${HOME}/jpf/jpf-core/"
 
 [ -e "${MODBAT_HOME}" ] || MODBAT_HOME="${HOME}/jpf/modbat/"
