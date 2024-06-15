@@ -1,0 +1,5 @@
+target = Main
+
+#listener = gov.nasa.jpf.listener.MethodTracker 
+
+classpath = ./
