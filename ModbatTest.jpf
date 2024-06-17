@@ -1,0 +1,11 @@
+@using = jpf-nhandler
+
+target = modbat.mbt.Main
+
+classpath = /usr/share/scala/lib/scala-library.jar:/root/modbat/build/modbat.jar:/root/modbat/build/modbat-examples.jar:/root/jpf/jpf-nhandler/build/jpf-nhandler.jar
+
+native_classpath = /usr/share/scala/lib/scala-library.jar:/root/modbat/build/modbat.jar:/root/jpf/jpf-nhandler/build/jpf-nhandler.jar
+
+#listener = gov.nasa.jpf.listener.MethodTracker
+
+target.args = modbat.examples.SimpleModel
