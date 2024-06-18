@@ -16,8 +16,8 @@
 
 #creating .jpf configuration file for running modbat inside jpf
 
-echo "@using = jpf-nhandler" > $HOME/jpf/ModbatTest.jpf
-echo "target = modbat.mbt.Main" >> $HOME/jpf/ModbatTest.jpf
-echo "classpath = $SCALA_HOME/lib/scala-library.jar:$MODBAT_HOME/build/modbat.jar:$JPF_NHADLER_HOME/build/jpf-nhandler.jar" >> $HOME/jpf/ModbatTest.jpf
-echo "target.args = $1" >> $HOME/jpf/ModbatTest.jpf
+echo "@using = jpf-nhandler" > ModbatTest.jpf
+echo "target = modbat.mbt.Main" >> ModbatTest.jpf
+echo "classpath = $SCALA_HOME/lib/scala-library.jar:$MODBAT_HOME/build/modbat.jar:$JPF_NHADLER_HOME/build/jpf-nhandler.jar" >> ModbatTest.jpf
+echo "target.args = $1" >> ModbatTest.jpf
 
