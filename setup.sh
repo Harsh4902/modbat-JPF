@@ -4,10 +4,10 @@
 SETUP_LOCATION=$(pwd)
 echo $SETUP_LOCATION
 # Create the /root/jpf directory if it doesn't exist
-mkdir $HOME/tmp
+mkdir /tmp/m-jpf
 
 # Navigate to the /root/jpf directory
-cd $HOME/tmp
+cd /tmp/m-jpf
 
 # Clone the repositories
 echo "Cloning repositories..."
@@ -17,22 +17,22 @@ git clone https://gitlab.com/cartho/modbat.git
 
 #creatign site.properties file
 echo "creating site.properties file..."
-mkdir $HOME/.jpf
-echo "jpf-core = /root/jpf/jpf-core" > $HOME/.jpf/site.properties
-echo "jpf-nhandler = /root/jpf/jpf-nhandler" >> $HOME/.jpf/site.properties
+mkdir /tmp/.jpf
+echo "jpf-core = /root/jpf/jpf-core" > /tmp/.jpf/site.properties
+echo "jpf-nhandler = /root/jpf/jpf-nhandler" >> /tmp/.jpf/site.properties
 
 #building all the repositories
 
 echo "Building jpf-core..."
-cd $HOME/tmp/jpf-core
+cd /tmp/m-jpf/jpf-core
 ./gradlew clean buildJars
 
 echo "Building modbat..."
-cd $HOME/tmp/modbat
+cd /tmp/m-jpf/modbat
 ./gradlew clean test
 
 echo "Building jpf-nhandler..."
-cd /$HOME/tmp/jpf-nhandler
+cd /tmp/m-jpf/jpf-nhandler
 ./gradlew clean build
 
 #runnig configure.sh
