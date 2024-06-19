@@ -4,10 +4,10 @@
 SETUP_LOCATION=$(pwd)
 echo $SETUP_LOCATION
 # Create the /root/jpf directory if it doesn't exist
-mkdir $HOME/jpf
+mkdir $HOME/tmp
 
 # Navigate to the /root/jpf directory
-cd $HOME/jpf
+cd $HOME/tmp
 
 # Clone the repositories
 echo "Cloning repositories..."
@@ -24,15 +24,15 @@ echo "jpf-nhandler = /root/jpf/jpf-nhandler" >> $HOME/.jpf/site.properties
 #building all the repositories
 
 echo "Building jpf-core..."
-cd $HOME/jpf/jpf-core
+cd $HOME/tmp/jpf-core
 ./gradlew clean buildJars
 
 echo "Building modbat..."
-cd $HOME/jpf/modbat
+cd $HOME/tmp/modbat
 ./gradlew clean test
 
 echo "Building jpf-nhandler..."
-cd /$HOME/jpf/jpf-nhandler
+cd /$HOME/tmp/jpf-nhandler
 ./gradlew clean build
 
 #runnig configure.sh
@@ -43,7 +43,7 @@ chmod +x configure.sh
 bash configure.sh
 
 # Verify if ModbatTes.jpf file is generated
-if [ -f "$HOME/jpf/ModbatTest.jpf" ]
+if [ -f "./ModbatTest.jpf" ]
 then
     echo "ModbatTest.jpf file generated successfully."
 else 

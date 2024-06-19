@@ -6,17 +6,15 @@
 
 #[ -e "${SCALA_HOME}" ] || SCALA_HOME="`which scala | sed -e 's,/bin/scala,,'`"
 
-[ -e "${JPF_HOME}" ] || JPF_HOME="${HOME}/jpf/jpf-core"
+[ -e "${JPF_HOME}" ] || JPF_HOME="${HOME}/tmp/jpf-core"
 
-[ -e "${MODBAT_HOME}" ] || MODBAT_HOME="${HOME}/jpf/modbat"
+[ -e "${MODBAT_HOME}" ] || MODBAT_HOME="${HOME}/tmp/modbat"
 
 #[ -e "${MODBAT_HOME}" ] || MODBAT_HOME="${HOME}/modbat/"
 
-[ -e "${JPF_NHANDLER_HOME}" ] || JPF_NHANDLER_HOME="${HOME}/jpf/jpf-nhandler"
+[ -e "${JPF_NHANDLER_HOME}" ] || JPF_NHANDLER_HOME="${HOME}/tmp/jpf-nhandler"
 
 #creating .jpf configuration file for running modbat inside jpf
-
-cd /root/jpf
 
 echo "@using = jpf-nhandler" > ModbatTest.jpf
 echo "target = modbat.mbt.Main" >> ModbatTest.jpf
