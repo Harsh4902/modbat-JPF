@@ -18,8 +18,8 @@ git clone https://gitlab.com/cartho/modbat.git
 #creatign site.properties file
 echo "creating site.properties file..."
 mkdir /tmp/.jpf
-echo "jpf-core = /root/jpf/jpf-core" > /tmp/.jpf/site.properties
-echo "jpf-nhandler = /root/jpf/jpf-nhandler" >> /tmp/.jpf/site.properties
+echo "jpf-core = /tmp/m-jpf/jpf-core" > /tmp/.jpf/site.properties
+echo "jpf-nhandler = /tmp/m-jpf/jpf-nhandler" >> /tmp/.jpf/site.properties
 
 #building all the repositories
 
