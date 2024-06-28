@@ -11,7 +11,7 @@ cd /tmp/m-jpf
 
 # Clone the repositories
 echo "Cloning repositories..."
-git clone https://github.com/javapathfinder/jpf-core.git
+git clone -b packageInfo https://github.com/Harsh4902/jpf-core.git
 git clone https://github.com/javapathfinder/jpf-nhandler.git
 git clone -b main https://github.com/Harsh4902/modbat.git
 
