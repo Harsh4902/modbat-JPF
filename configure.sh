@@ -11,13 +11,13 @@
 # Ubuntu: 1. there is a /usr/share/scala, skip the rest
 # Mac Ports: 2. right-hand side finds the right location
 
-[ -d "${JPF_HOME}" ] || JPF_HOME="/tmp/m-jpf/jpf-core"
+[ -d "${JPF_HOME}" ] || JPF_HOME="/root/jpf/jpf-core"
 
-[ -d "${MODBAT_HOME}" ] || MODBAT_HOME="/tmp/m-jpf/modbat"
+[ -d "${MODBAT_HOME}" ] || MODBAT_HOME="/root/jpf/modbat"
 
 [ -d "${MODBAT_HOME}" ] || MODBAT_HOME="${HOME}/modbat/"
 
-[ -d "${JPF_NHANDLER_HOME}" ] || JPF_NHANDLER_HOME="/tmp/m-jpf/jpf-nhandler"
+[ -d "${JPF_NHANDLER_HOME}" ] || JPF_NHANDLER_HOME="/root/jpf/jpf-nhandler"
 
 #creating .jpf configuration file for running modbat inside jpf
 
