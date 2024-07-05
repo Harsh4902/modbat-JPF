@@ -19,6 +19,10 @@ RUN wget https://downloads.lightbend.com/scala/2.11.12/scala-2.11.12.deb && \
     apt-get install -f && \
     rm scala-2.11.12.deb
 
+# setup of JAVA_HOME
+RUN export JAVA_HOME="$(dirname $(dirname $(readlink -f $(which java))))"
+ENV PATH $JAVA_HOME/bin:$PATH
+
 # Copy setup and configuration scripts
 RUN mkdir /root/utils
 COPY setup.sh /root/utils/setup.sh
