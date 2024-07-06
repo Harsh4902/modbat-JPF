@@ -1,11 +1,11 @@
 # modbat-JPF
 repo for docker image of Modbat-JPF integration
 
-- Pull the dokcer image
-  `docker pull harsh4902/modbat_jpf`
+- Build Docker image from Dockerfiel
+  `docker build -t modbat-jpf:1.0 .`
 
-- go inside `jpf` directory
-  `cd $HOME/jpf`
+- Create docker container from `modbat-jpf:1.0` image
+  `CONT_ID=$(docker run -d -it modbat-jpf:1.0)`
 
-- Run Modbat inside JPF
-  `java -jar jpf-core/build/RunJPF.jar ModbatTest.jpf`
+- get access of container's shell
+  `docker exec -it $CONT_ID bash`
