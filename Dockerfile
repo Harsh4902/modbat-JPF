@@ -27,3 +27,4 @@ ENV PATH $JAVA_HOME/bin:$PATH
 RUN mkdir /root/utils
 COPY setup.sh /root/utils/setup.sh
 COPY configure.sh /root/utils/configure.sh
+COPY test.sh /root/utils/test.sh
