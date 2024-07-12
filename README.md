@@ -4,7 +4,7 @@
 
   ## Container creation for Modbat-JPF
 
-    - Build Docker image from Dockerfiel
+    - Build Docker image from Dockerfile
       `docker build -t modbat-jpf:1.0 .`
 
   - Create docker container from `modbat-jpf:1.0` image
