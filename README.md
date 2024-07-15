@@ -16,7 +16,7 @@
   ## How to run?
 
   - run `setup.sh` which will set all required environment variables, install required libraries and generate `.jpf` properties file.
-    `bash /utils/setup.sh`
+    `bash /root/utils/setup.sh`
 
   - run `test.sh` to check all test examples are perfectly running
-    `bash /utils/test.sh`
+    `bash /root/utils/test.sh`
