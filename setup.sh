@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #variables
-SETUP_LOCATION=$(pwd)
-echo $SETUP_LOCATION
+SETUP_LOCATION=/root/utils
+
 # Create the /root/jpf directory if it doesn't exist
 mkdir /root/jpf
 
