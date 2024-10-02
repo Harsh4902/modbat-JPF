@@ -1,6 +1,6 @@
 # Modbat-JPF
 
-- we are providing separate environment as docker container to test and run Modbat on JPF with minimal effort. follow bellow given setps
+- We are providing separate environment as docker container to test and run Modbat on JPF with minimal effort. follow bellow given setps: 
 
   ## Container creation for Modbat-JPF
 
